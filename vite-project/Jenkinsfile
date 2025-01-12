@@ -9,11 +9,13 @@ pipeline {
         }
         stage('install') {
             steps {
+                sh 'cd vite-project'
                 sh 'npm install'
             }
         }
         stage('build') {
             steps {
+                sh 'cd vite-project'
                 sh 'npm run build'
             }
         }
