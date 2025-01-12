@@ -9,12 +9,12 @@ pipeline {
         }
         stage('install') {
             steps {
-                sh './VITE-PROJECT/npm install'
+                sh 'vite-project/npm install'
             }
         }
         stage('build') {
             steps {
-                sh './VITE-PROJECTnpm run build'
+                sh 'vite-project/npm run build'
             }
         }
     }
